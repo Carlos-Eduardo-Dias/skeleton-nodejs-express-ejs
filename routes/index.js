@@ -9,7 +9,7 @@ router.get('/', async function(req, res, next) {
   res.json(autores.rows);
 });
 
-router.get('/insert', async function(req, res, next) {
+router.post('/insert', async function(req, res, next) {
 
   const autor = {
     nome: "Rafael",
